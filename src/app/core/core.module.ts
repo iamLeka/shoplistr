@@ -11,7 +11,7 @@ import { StockService } from './stock-service.service';
   imports: [
     BrowserModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [
     StockService
