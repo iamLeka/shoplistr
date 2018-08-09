@@ -1,0 +1,6 @@
+<div>
+    <ul *ngFor="let stockItem of (stock$ | async)">
+      <li>item name: {{stockItem.name}} </li>
+      <li>stock status: {{stockItem.amount}}</li>
+    </ul>
+</div>
