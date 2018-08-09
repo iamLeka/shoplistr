@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '../../../node_modules/@angular/common/http';
+import { SharedModule } from '../shared/shared.module';
 import { StockService } from './stock-service.service';
 
 
@@ -9,7 +10,8 @@ import { StockService } from './stock-service.service';
   declarations: [],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [
     StockService

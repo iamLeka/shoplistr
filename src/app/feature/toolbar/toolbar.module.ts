@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../../shared/shared.module';
-import { ShoppingListComponent } from './shopping-list.component';
+import { ToolbarComponent } from './toolbar.component';
 
 @NgModule({
   imports: [
     SharedModule
   ],
-  declarations: [ShoppingListComponent],
+  declarations: [ToolbarComponent],
   exports: [
-    ShoppingListComponent
+    ToolbarComponent
   ]
 })
-export class ShoppingListModule { }
+export class ToolbarModule { }

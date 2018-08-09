@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { StockModule } from './stock/stock.module';
+import { ToolbarModule } from './toolbar/toolbar.module';
 
 @NgModule({
   imports: [
     StockModule,
-    ShoppingListComponent
+    ShoppingListModule,
+    ToolbarModule
   ],
   exports: [
     StockModule,
-    ShoppingListComponent
+    ShoppingListModule,
+    ToolbarModule
   ]
 })
 export class FeatureModule { }
