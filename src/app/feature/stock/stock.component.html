@@ -1,6 +1,12 @@
 <div>
-    <ul *ngFor="let stockItem of (stock$ | async)">
-      <li>item name: {{stockItem.name}} </li>
-      <li>stock status: {{stockItem.amount}}</li>
-    </ul>
+  in stock:
+  <ul *ngFor="let stockItem of (stock$ | async)">
+    <li>item name: {{stockItem.name}} </li>
+    <li>stock status: {{stockItem.amount}}</li>
+    <div class="stockcontrol">
+      <button> + </button>
+      <button> - </button>
+      <button> add to shopping list </button>
+    </div>
+  </ul>
 </div>

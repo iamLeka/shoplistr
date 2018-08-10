@@ -26,5 +26,10 @@ export class StockComponent implements OnInit {
   getStock() {
     this.stock$ = this.stockService.getStock();
   }
+
+  increaseStock(item: Item) {
+    item.amount += 1;
+    this.stockService.increaseStockItemAmount();
+  }
 }
 

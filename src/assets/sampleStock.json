@@ -1,26 +1,26 @@
 [{
         "id": "1",
         "name": "Apples",
-        "amount": "high"
+        "amount": "5"
     },
     {
         "id": "1",
         "name": "Bananas",
-        "amount": "mid"
+        "amount": "4"
     },
     {
         "id": "1",
         "name": "Coconuts",
-        "amount": "low"
+        "amount": "2"
     },
     {
         "id": "1",
         "name": "Deodorant",
-        "amount": "high"
+        "amount": "1"
     },
     {
         "id": "1",
         "name": "Butter",
-        "amount": "low"
+        "amount": "4"
     }
 ]

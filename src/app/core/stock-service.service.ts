@@ -11,12 +11,16 @@ export class StockService {
   getStock(): Observable<Array<Item>> {
     return this.http.get<Item[]>('/assets/sampleStock.json');
   }
+
+  increaseStockItemAmount() {
+
+  }
 }
 
 export interface Item {
   id: number;
   name: string;
-  amount: StockItemAmount;
+  amount: number;
 }
 
 export enum StockItemAmount {
