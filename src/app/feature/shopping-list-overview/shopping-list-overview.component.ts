@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { ShoppingLists, ShoppingListService } from '../../core/shopping-list.service';
+import { ShoppingList, ShoppingListService } from '../../core/shopping-list.service';
 
 
 @Component({
@@ -9,9 +9,9 @@ import { ShoppingLists, ShoppingListService } from '../../core/shopping-list.ser
   templateUrl: './shopping-lists.component.html',
   styleUrls: ['./shopping-lists.component.css']
 })
-export class ShoppingListsComponent implements OnInit {
+export class ShoppingListOverviewComponent implements OnInit {
 
-  shoppingLists$: Observable<Array<ShoppingLists>>;
+  shoppingLists$: Observable<Array<ShoppingList>>;
 
   constructor(
     private shoppingListService: ShoppingListService

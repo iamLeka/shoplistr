@@ -4,12 +4,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { ToolbarComponent } from './toolbar.component';
 
 @NgModule({
-  imports: [
-    SharedModule
-  ],
+  imports: [SharedModule],
   declarations: [ToolbarComponent],
-  exports: [
-    ToolbarComponent
-  ]
+  exports: [ToolbarComponent]
 })
 export class ToolbarModule { }

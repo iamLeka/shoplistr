@@ -4,12 +4,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { StockComponent } from './stock.component';
 
 @NgModule({
-  imports: [
-    SharedModule
-  ],
+  imports: [SharedModule],
   declarations: [StockComponent],
-  exports: [
-    StockComponent
-  ]
+  exports: [StockComponent]
 })
 export class StockModule { }
