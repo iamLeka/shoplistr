@@ -1,9 +1,10 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { HttpClientModule } from '../../../node_modules/@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
-import { StockService } from './stock-service.service';
+import { ShoppingListService } from './shopping-list.service';
+import { StockService } from './stock.service';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { StockService } from './stock-service.service';
     SharedModule,
   ],
   providers: [
-    StockService
+    StockService,
+    ShoppingListService
   ]
 })
 export class CoreModule { }

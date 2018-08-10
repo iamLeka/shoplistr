@@ -1,3 +1,7 @@
+<ul *ngFor="let shoppingList of (shoppingLists$ | async)">
+<li>{{shoppingList.name}}</li>
+</ul>
+
 <ul>
   <li>selectable lists ie: groceries, hardware, party</li>
   <li>each list contains items</li>

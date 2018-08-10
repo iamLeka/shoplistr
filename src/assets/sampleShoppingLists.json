@@ -1,0 +1,76 @@
+[
+  {
+    "name": "groceries",
+    "items": [
+      {
+        "id": 1,
+        "name": "Apples",
+        "amount": 5
+      },
+      {
+        "id": 2,
+        "name": "Bananas",
+        "amount": 4
+      },
+      {
+        "id": 3,
+        "name": "Coconuts",
+        "amount": 4
+      },
+      {
+        "id": 4,
+        "name": "Deodorant",
+        "amount": 5
+      },
+      {
+        "id": 5,
+        "name": "Butter",
+        "amount": 3
+      }
+    ]
+  },{
+    "name": "party",
+    "items": [
+      {
+        "id": 1,
+        "name": "chips",
+        "amount": 5
+      },
+      {
+        "id": 2,
+        "name": "beer",
+        "amount": 4
+      },
+      {
+        "id": 3,
+        "name": "wine",
+        "amount": 4
+      },
+      {
+        "id": 4,
+        "name": "crackers",
+        "amount": 5
+      }
+    ]
+
+  },{
+    "name": "hardware store",
+    "items": [
+      {
+        "id": 1,
+        "name": "hammer",
+        "amount": 1
+      },
+      {
+        "id": 2,
+        "name": "nails",
+        "amount": 50
+      },
+      {
+        "id": 3,
+        "name": "wood planks",
+        "amount": 4
+      }
+    ]
+  }
+]
