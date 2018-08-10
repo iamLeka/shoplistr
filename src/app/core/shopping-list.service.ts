@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { Item } from './stock.service';
+import { ShoppingListComponent } from '../feature/shopping-list/shopping-list.component';
 
 
 @Injectable()
@@ -10,12 +10,9 @@ export class ShoppingListService {
 
   constructor(private http: HttpClient) { }
 
-  getShoppingLists(): Observable<Array<ShoppingList>> {
-    return this.http.get<ShoppingList[]>('/assets/sampleShoppingLists.json');
+  getShoppingLists(): Observable<Array<ShoppingListComponent>> {
+    return this.http.get<Array<ShoppingListComponent>>('/assets/sampleShoppingLists.json');
   }
 }
 
-export interface ShoppingList {
-  name: string;
-  shoppingListItems: Array<Item>;
-}
+
