@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { CreateShoppingListComponent } from './feature/create-shopping-list/create-shopping-list.component';
-import { ShoppingListComponent } from './feature/shopping-list/shopping-list.component';
+import { ShoppingListsComponent } from './feature/shopping-lists/shopping-lists.component';
 import { StockComponent } from './feature/stock/stock.component';
 
 const routes: Routes = [
@@ -15,7 +15,7 @@ const routes: Routes = [
     component: StockComponent
   }, {
     path: 'shoppinglist',
-    component: ShoppingListComponent
+    component: ShoppingListsComponent
   }, {
     path: 'createshoppinglist',
     component: CreateShoppingListComponent

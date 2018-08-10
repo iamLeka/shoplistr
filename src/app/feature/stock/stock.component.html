@@ -4,8 +4,8 @@
     <li>item name: {{stockItem.name}} </li>
     <li>stock status: {{stockItem.amount}}</li>
     <div class="stockcontrol">
-      <button> + </button>
-      <button> - </button>
+      <button (click)=increaseStock(stockItem)> + </button>
+      <button (click)=decreaseStock(stockItem)> - </button>
       <button> add to shopping list </button>
     </div>
   </ul>

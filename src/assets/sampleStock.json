@@ -1,26 +1,26 @@
 [{
-        "id": "1",
+        "id": 1,
         "name": "Apples",
-        "amount": "5"
+        "amount": 5
     },
     {
-        "id": "1",
+        "id": 2,
         "name": "Bananas",
-        "amount": "4"
+        "amount": 4
     },
     {
-        "id": "1",
+        "id": 3,
         "name": "Coconuts",
-        "amount": "2"
+        "amount": 4
     },
     {
-        "id": "1",
+        "id": 4,
         "name": "Deodorant",
-        "amount": "1"
+        "amount": 5
     },
     {
-        "id": "1",
+        "id": 5,
         "name": "Butter",
-        "amount": "4"
+        "amount": 3
     }
 ]
