@@ -20,7 +20,6 @@ export class StockComponent implements OnInit {
 
   ngOnInit() {
     this.getStock();
-    console.log(this.stock$);
   }
 
   getStock() {

@@ -9,7 +9,7 @@ export class StockService {
   constructor(private http: HttpClient) { }
 
   getStock(): Observable<Array<Item>> {
-    return this.http.get<Item[]>('/assets/sampleStock.json');
+    return this.http.get<Array<Item>>('/assets/sampleStock.json');
   }
 
   increaseStockItemAmount() {
@@ -25,6 +25,12 @@ export interface Item {
   id: number;
   name: string;
   amount: number;
+}
+
+export interface ShoppingList {
+  id: number;
+  name: string;
+  items: Item[];
 }
 
 export enum StockItemAmount {

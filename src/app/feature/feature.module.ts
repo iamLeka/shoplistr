@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { ShoppingListOverviewModule } from './shopping-list-overview/shopping-list-overview.module';
-import { ShoppingListModule } from './shopping-list/shopping-list.module';
+import { ShoppingListViewModule } from './shopping-list/shopping-list-view.module';
 import { StockModule } from './stock/stock.module';
 import { ToolbarModule } from './toolbar/toolbar.module';
 
@@ -10,13 +10,13 @@ import { ToolbarModule } from './toolbar/toolbar.module';
     StockModule,
     ShoppingListOverviewModule,
     ToolbarModule,
-    ShoppingListModule
+    ShoppingListViewModule
   ],
   exports: [
     StockModule,
     ShoppingListOverviewModule,
     ToolbarModule,
-    ShoppingListModule
+    ShoppingListViewModule
     ],
   declarations: []
 })

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { CreateShoppingListComponent } from './feature/create-shopping-list/create-shopping-list.component';
-import { ShoppingListsComponent } from './feature/shopping-lists/shopping-lists.component';
+import { ShoppingListOverviewComponent } from './feature/shopping-list-overview/shopping-list-overview.component';
+import { ShoppingListViewComponent } from './feature/shopping-list/shopping-list-view.component';
 import { StockComponent } from './feature/stock/stock.component';
 
 const routes: Routes = [
@@ -14,11 +14,13 @@ const routes: Routes = [
     path: 'stock',
     component: StockComponent
   }, {
-    path: 'shoppinglist',
-    component: ShoppingListsComponent
-  }, {
-    path: 'createshoppinglist',
-    component: CreateShoppingListComponent
+    path: 'shoppinglists',
+    component: ShoppingListOverviewComponent,
+    children: [{
+      path: ':id',
+      component: ShoppingListViewComponent}
+
+    ]
   }
 ];
 
@@ -26,7 +28,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes)
   ],
-  exports: [ RouterModule
+  exports: [RouterModule
   ]
 })
 export class AppRoutingModule { }

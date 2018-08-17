@@ -1,12 +1,12 @@
-<ul *ngFor="let shoppingList of (shoppingLists$ | async)">
-<li>{{shoppingList.name}}</li>
-</ul>
+<div>
+  <ul *ngFor="let shoppingList of (shoppingLists$ | async)">
+    <button routerLink="/shoppinglists/{{shoppingList.id}}" >{{shoppingList.name}}</button>
 
-<ul>
-  <li>selectable lists ie: groceries, hardware, party</li>
-  <li>each list contains items</li>
-  <li>amount needed</li>
-  <li>bought button adds item to stock</li>
-  <li>in stock amount</li>
-  <a routerLink="/createshoppinglist">add shoppinglist</a>
-</ul>
+    <app-shopping-list [shoppingList]="shoppingList" >    </app-shopping-list>
+  </ul>
+
+  <ul>
+    <a routerLink="/createshoppinglist">add shoppinglist</a>
+  </ul>
+</div>
+

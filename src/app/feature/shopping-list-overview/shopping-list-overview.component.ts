@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { ShoppingList, ShoppingListService } from '../../core/shopping-list.service';
+import { ShoppingListService } from '../../core/shopping-list.service';
+import { ShoppingList } from '../../core/stock.service';
 
 
 @Component({
   selector: 'app-shopping-lists',
-  templateUrl: './shopping-lists.component.html',
-  styleUrls: ['./shopping-lists.component.css']
+  templateUrl: './shopping-list-overview.component.html',
+  styleUrls: ['./shopping-list-overview.component.css']
 })
 export class ShoppingListOverviewComponent implements OnInit {
 
   shoppingLists$: Observable<Array<ShoppingList>>;
+  showList = false;
 
   constructor(
     private shoppingListService: ShoppingListService
@@ -20,10 +22,12 @@ export class ShoppingListOverviewComponent implements OnInit {
 
   ngOnInit() {
     this.getShoppingLists();
-    console.log(this.shoppingLists$);
-  }
+    }
 
   getShoppingLists() {
     this.shoppingLists$ = this.shoppingListService.getShoppingLists();
   }
+  // toggle(): void {
+  //   this.showList != this.showList;
+  // }
 }
