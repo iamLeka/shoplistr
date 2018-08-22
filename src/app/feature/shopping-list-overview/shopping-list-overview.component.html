@@ -1,8 +1,8 @@
 <div>
   <ul *ngFor="let shoppingList of (shoppingLists$ | async)">
-    <button routerLink="/shoppinglists/{{shoppingList.id}}" >{{shoppingList.name}}</button>
+    <button (click)="toggle(shoppingList.id)">{{shoppingList.name}}</button>
 
-    <app-shopping-list [shoppingList]="shoppingList" >    </app-shopping-list>
+    <app-shopping-list [shoppingList]="shoppingList" *ngIf="showList" >    </app-shopping-list>
   </ul>
 
   <ul>

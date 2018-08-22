@@ -7,7 +7,7 @@ import { Item, StockService } from '../../core/stock.service';
 @Component({
   selector: 'app-stock',
   templateUrl: './stock.component.html',
-  styleUrls: ['./stock.component.css']
+  styleUrls: ['./stock.component.scss']
 })
 export class StockComponent implements OnInit {
 

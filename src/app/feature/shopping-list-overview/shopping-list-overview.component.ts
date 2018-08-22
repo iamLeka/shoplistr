@@ -22,12 +22,14 @@ export class ShoppingListOverviewComponent implements OnInit {
 
   ngOnInit() {
     this.getShoppingLists();
-    }
+  }
 
   getShoppingLists() {
     this.shoppingLists$ = this.shoppingListService.getShoppingLists();
   }
-  // toggle(): void {
-  //   this.showList != this.showList;
-  // }
+  toggle(): void {
+    console.log('toggle button click');
+    this.showList = !this.showList;
+    console.log(this.showList);
+  }
 }

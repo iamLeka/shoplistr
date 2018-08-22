@@ -12,13 +12,11 @@ export class StockService {
     return this.http.get<Array<Item>>('/assets/sampleStock.json');
   }
 
-  increaseStockItemAmount() {
+  addToStock(id: number, amount: number) { }
 
-  }
+  increaseStockItemAmount() { }
 
-  decreaseStockItemAmount() {
-
-  }
+  decreaseStockItemAmount() { }
 }
 
 export interface Item {

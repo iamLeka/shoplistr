@@ -1,12 +1,15 @@
-<div>
-  in stock:
-  <ul *ngFor="let stockItem of (stock$ | async)">
-    <li>item name: {{stockItem.name}} </li>
-    <li>stock status: {{stockItem.amount}}</li>
-    <div class="stockcontrol">
-      <button (click)=increaseStock(stockItem)> + </button>
-      <button (click)=decreaseStock(stockItem)> - </button>
-      <button> add to shopping list </button>
-    </div>
-  </ul>
+<div *ngFor="let stockItem of (stock$ | async)">
+  <div>
+    {{stockItem.amount}}
+  </div>
+  <div>
+    {{stockItem.name}}
+  </div>
+  <div (click)=increaseStock(stockItem)>
+    +
+  </div>
+  <div (click)=decreaseStock(stockItem)>
+    -
+  </div>
+
 </div>

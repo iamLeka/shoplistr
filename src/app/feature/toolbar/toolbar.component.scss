@@ -1,6 +1,6 @@
 h1 {
   font-size: 1.2em;
-  color: #999;
+  color: #fff;
   margin-bottom: 0;
 }
 h2 {
@@ -9,20 +9,22 @@ h2 {
   padding-top: 0;
 }
 nav a {
-  padding: 5px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-grow: 1;
+text-align: center;
+  padding: 10px 10px;
   text-decoration: none;
-  margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
+  background-color:#DCA932;
 }
-nav a:visited, a:link {
-  color: #607d8b;
-}
+
 nav a:hover {
-  color: #039be5;
-  background-color: #cfd8dc;
+  background-color: #DBDBDB;
 }
 nav a.active {
   color: #039be5;
+}
+
+nav{
+  display: flex;
 }

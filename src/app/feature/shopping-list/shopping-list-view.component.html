@@ -1,5 +1,5 @@
   <ul *ngFor="let item of shoppingList.items">
-    <li>{{item.name}} {{item.amount}} <button> add to stock </button>
+    <li>{{item.name}} {{item.amount}} <button (click)="markAsBought(item.id, item.amount)"> add to stock </button>
     </li>
 
   </ul>

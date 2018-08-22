@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { ShoppingList } from '../../core/stock.service';
+import { ShoppingList, StockService } from '../../core/stock.service';
 
 
 
@@ -12,4 +12,13 @@ import { ShoppingList } from '../../core/stock.service';
 export class ShoppingListViewComponent {
 
 @Input() shoppingList: ShoppingList;
+
+constructor(
+  private stockService: StockService
+) {
+}
+markAsBought(id: number, amount: number) {
+  this.stockService.addToStock(id, amount);
+}
+
 }
