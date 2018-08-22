@@ -13,7 +13,6 @@ import { ShoppingList } from '../../core/stock.service';
 export class ShoppingListOverviewComponent implements OnInit {
 
   shoppingLists$: Observable<Array<ShoppingList>>;
-  showList = false;
 
   constructor(
     private shoppingListService: ShoppingListService
@@ -27,9 +26,5 @@ export class ShoppingListOverviewComponent implements OnInit {
   getShoppingLists() {
     this.shoppingLists$ = this.shoppingListService.getShoppingLists();
   }
-  toggle(): void {
-    console.log('toggle button click');
-    this.showList = !this.showList;
-    console.log(this.showList);
-  }
+
 }

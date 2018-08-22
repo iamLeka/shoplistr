@@ -22,5 +22,35 @@
         "id": 5,
         "name": "Butter",
         "amount": 3
+    },
+    {
+        "id": 6,
+        "name": "Toilet rolls",
+        "amount": 11
+    },
+    {
+        "id": 7,
+        "name": "Shampoo",
+        "amount": 1
+    },
+    {
+        "id": 8,
+        "name": "Flour",
+        "amount": 5
+    },
+    {
+        "id": 9,
+        "name": "Butter",
+        "amount": 2
+    },
+    {
+        "id": 10,
+        "name": "Bread",
+        "amount": 5
+    },
+    {
+        "id": 11,
+        "name": "Chocolat Bars",
+        "amount": 7
     }
 ]

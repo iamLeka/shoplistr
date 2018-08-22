@@ -12,6 +12,7 @@ import { ShoppingList, StockService } from '../../core/stock.service';
 export class ShoppingListViewComponent {
 
 @Input() shoppingList: ShoppingList;
+showList = false;
 
 constructor(
   private stockService: StockService
@@ -20,5 +21,7 @@ constructor(
 markAsBought(id: number, amount: number) {
   this.stockService.addToStock(id, amount);
 }
-
+toggle(): void {
+  this.showList = !this.showList;
+}
 }

@@ -1,0 +1,51 @@
+.shoppinglistbutton{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 30px;
+  padding: 10px;
+  vertical-align: middle;
+  border-bottom: 1px dashed #8F8F8F;
+  &:hover{
+    background-color: #DBDBDB;
+    color: #000000;
+  }
+}
+.shoppinglistcontainer{
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.itemname{
+  flex-grow: 1;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+  background-color: white;
+  border-bottom: 1px dashed #8F8F8F;
+  &:hover{
+    background-color: #DCA932;
+    color: #fff;
+  }
+}
+.itemamount{
+  width: 50px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #DBDBDB;
+  color: #8F8F8F;
+  font-weight: bold;
+}
+.addtostock{
+  width: 50px;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: middle;
+  padding-top: 10px;
+  color: antiquewhite;
+  background-color: #7B509B;
+  &:hover{
+    background-color: #382447;
+  }
+}

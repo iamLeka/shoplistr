@@ -1,12 +1,7 @@
-<div>
-  <ul *ngFor="let shoppingList of (shoppingLists$ | async)">
-    <button (click)="toggle(shoppingList.id)">{{shoppingList.name}}</button>
-
-    <app-shopping-list [shoppingList]="shoppingList" *ngIf="showList" >    </app-shopping-list>
-  </ul>
-
-  <ul>
-    <a routerLink="/createshoppinglist">add shoppinglist</a>
-  </ul>
+<div *ngFor="let shoppingList of (shoppingLists$ | async)">
+  <app-shopping-list [shoppingList]="shoppingList"> </app-shopping-list>
 </div>
 
+<div>
+  <a routerLink="/createshoppinglist">add shoppinglist</a>
+</div>

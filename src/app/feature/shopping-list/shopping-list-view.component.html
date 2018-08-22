@@ -1,5 +1,15 @@
-  <ul *ngFor="let item of shoppingList.items">
-    <li>{{item.name}} {{item.amount}} <button (click)="markAsBought(item.id, item.amount)"> add to stock </button>
-    </li>
+<div class="shoppinglistbutton" (click)="toggle(shoppingList.id)">{{shoppingList.name}}
+</div>
+<div class="shoppinglistcontainer" *ngFor="let item of shoppingList.items">
+  <div class="stockitemamount" *ngIf="showList" class="itemamount">
+    {{item.amount}}
+  </div>
+  <div class="stockitemname" *ngIf="showList" class="itemname">
+    {{item.name}}
+  </div>
+  <div (click)="markAsBought(item.id, item.amount)" *ngIf="showList" class="addtostock">
+    &#10003;
+  </div>
 
-  </ul>
+
+</div>

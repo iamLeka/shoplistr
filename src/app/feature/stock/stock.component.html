@@ -1,14 +1,14 @@
-<div *ngFor="let stockItem of (stock$ | async)">
-  <div>
+<div *ngFor="let stockItem of (stock$ | async)" class="stockitemcontainer">
+  <div class="stockitemamount">
     {{stockItem.amount}}
   </div>
-  <div>
+  <div class="stockitemname">
     {{stockItem.name}}
-  </div>
-  <div (click)=increaseStock(stockItem)>
+  </div >
+  <div (click)=increaseStock(stockItem) class="stockitemcalc">
     +
   </div>
-  <div (click)=decreaseStock(stockItem)>
+  <div (click)=decreaseStock(stockItem) class="stockitemcalc">
     -
   </div>
 
