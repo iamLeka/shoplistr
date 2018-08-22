@@ -1,0 +1,38 @@
+.stockitemcontainer {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 50px;
+}
+.stockitemname{
+  flex-grow: 1;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+  background-color: white;
+  border-bottom: 1px dotted #8F8F8F;
+  &:hover{
+    background-color: #DCA932;
+    color: #fff;
+  }
+}
+.stockitemamount{
+  width: 50px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+  background-color: #DBDBDB;
+  color: #8F8F8F;
+  font-weight: bold;
+}
+.stockitemcalc{
+  width: 50px;
+  text-align: center;
+  font-size: 25px;
+  vertical-align: middle;
+  padding-top: 10px;
+  color: antiquewhite;
+  background-color: #7B509B;
+  &:hover{
+    background-color: #382447;
+  }
+}

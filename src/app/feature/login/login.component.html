@@ -1,0 +1,26 @@
+<div class="logintop" [style.background]="'assets/loginIMG.PNG'">
+
+  <h1>Hi!</h1>
+  <h4>Let's sign in.</h4>
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+    <mat-form-field>
+      <input matInput placeholder="Username" formControlName="userName">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="password" placeholder="Password" formControlName="password">
+    </mat-form-field>
+
+    <button mat-raised-button type="submit" color="primary">
+      Log in
+    </button>
+
+  </form>
+
+
+</div>
+<div>
+
+</div>
