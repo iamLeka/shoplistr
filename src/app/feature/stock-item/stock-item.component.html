@@ -1,8 +1,8 @@
 <div class="stockitemcontainer">
-  <div class="stockitemamount">
+  <div class="stockitemamount" [@increaseTrigger]="counterstate" (@increaseTrigger.done)="returnToNormal()">
     {{stockItem.amount}}
   </div>
-  <div class="stockitemname">
+  <div class="stockitemname" (click)=toggleItemMenu()>
     {{stockItem.name}}
   </div>
   <div (click)=increaseStock(stockItem) class="stockitemcalc">
@@ -10,5 +10,14 @@
   </div>
   <div (click)=decreaseStock(stockItem) class="stockitemcalc">
     -
+  </div>
+</div>
+<div class="submenucontainer" [@slideOpen]="submenustate">
+
+  <div class="itemMenuItem" *ngFor="let shoppingList of (shoppingLists$ | async)">
+     {{shoppingList.name}}: {{getAmountFor(stockItem.id, shoppingList).amount}}
+  </div>
+  <div class="itemMenuItemdelete">
+    Delete from stock
   </div>
 </div>

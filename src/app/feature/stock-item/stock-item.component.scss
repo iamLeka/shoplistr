@@ -21,9 +21,10 @@
   vertical-align: middle;
   padding-top: 10px;
   background-color: #DBDBDB;
-  color: #8F8F8F;
+  color: rgb(100, 100, 100);
   font-weight: bold;
 }
+
 .stockitemcalc{
   width: 50px;
   text-align: center;
@@ -35,4 +36,34 @@
   &:hover{
     background-color: #382447;
   }
+}
+
+.itemMenuItem{
+  vertical-align: middle;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #DBDBDB;
+  color: rgb(100, 100, 100);
+  &:hover{
+    background-color: rgb(44, 44, 44);
+  }
+}
+.itemMenuItemdelete{
+  vertical-align: middle;
+  padding-top: 10px;
+  height: 40px;
+  text-align: center;
+  background-color: rgb(214, 30, 30);
+  color: #fff;
+
+  &:hover{
+    background-color: rgb(90, 2, 2);
+  }
+}
+
+.submenucontainer {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
