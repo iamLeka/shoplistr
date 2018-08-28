@@ -1,6 +1,6 @@
 <div class="shoppinglistbutton" (click)="toggle(shoppingList.id)">{{shoppingList.name}}
 </div>
-<div class="shoppinglistcontainer" *ngFor="let item of shoppingList.items">
+<div class="shoppinglistcontainer" *ngFor="let item of shoppingList.items" [@slideOpen]="submenustate">
   <div class="stockitemamount" *ngIf="showList" class="itemamount">
     {{item.amount}}
   </div>
